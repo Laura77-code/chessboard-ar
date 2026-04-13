@@ -2,7 +2,7 @@
 
 This project implements an Augmented Reality (AR) pipeline that detects a chessboard in a video, estimates the camera's pose, and overlays an animated Ned Flanders GIF onto the board in perspective.
 
-![Demo Result](./assets/demo.gif)
+![Demo Result](./assets/demoGif.gif)
 
 ## Overview
 The goal of this project is to create a seamless AR experience where an animated character appears to "stand" on a real-world chessboard. The pipeline uses classical computer vision techniques to estimate the 3D position and orientation (pose) of the camera relative to the board, allowing for accurate perspective warping of the AR content.
@@ -36,9 +36,11 @@ python main.py --input_video example.mp4 --calibration outputs/calibration/calib
 
 ## Results & Demo
 The final processed video is saved as `output.mp4`. You can find visual results in the following files:
-- `assets/demo.gif`: A short animated preview of the AR overlay.
+- `assets/demoGif.gif`: A short animated preview of the AR overlay.
 - `assets/result_frame.png`: A high-quality screenshot of Ned Flanders on the board.
 - `output.mp4`: The complete rendered AR experience.
+
+> **Note on GIF Color**: The colors of Ned Flanders in `assets/demoGif.gif` might not look exactly the same as in the original video. This is because the GIF format is limited to a **256-color palette**, which leads to color quantization during the conversion from video. To see the original rendering quality and colors, please refer directly to the `output.mp4` file.
 
 ## Project Structure
 - `main.py`: The AR pipeline that reuses calibration for pose estimation.
