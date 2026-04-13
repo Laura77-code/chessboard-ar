@@ -58,5 +58,3 @@ The final processed video is saved as `output.mp4`. You can find visual results 
 - **Pose Estimation**: Uses `cv.solvePnP` with fixed calibration parameters to find the camera's rotation and translation in every frame.
 - **Perspective Warp**: Projects a 3D model of a vertical plane onto the board and computes a perspective transformation to warp the GIF frames into the scene.
 
----
-Developed as a Computer Vision AR project for HW4.
